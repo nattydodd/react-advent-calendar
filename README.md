@@ -1,1 +1,10 @@
-# react-advent-calendar
+Virtual Advent Calendar
+---
+
+Setup
+---
+
+```
+npm install
+```
+
