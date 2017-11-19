@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss public/scss/style.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,11 @@
     "webpack-dev-middleware": "^1.12.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.7.1",
+    "nodemon": "^1.12.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0"
   }
 }
