@@ -1,5 +1,5 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386 486">
-  <polyline class="cls-1" style="fill:none;stroke:#8c6339;stroke-miterlimit:10;" points="140.19 181.92 92.89 164 7.21 103.94"/>
+  <polyline class="cls-1" style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="140.19 181.92 92.89 164 7.21 103.94"/>
   <circle class="cls-2" style="fill:#fff;" cx="195.89" cy="359" r="127"/>
   <circle class="cls-2" style="fill:#fff;" cx="195.89" cy="202" r="72"/>
   <circle class="cls-2" style="fill:#fff;" cx="195.89" cy="106.54" r="43.46"/>
@@ -13,9 +13,9 @@
   <path d="M169.83,15.14h51.83a5,5,0,0,1,5,5v50a0,0,0,0,1,0,0H164.83a0,0,0,0,1,0,0v-50A5,5,0,0,1,169.83,15.14Z"/>
   <rect x="152.43" y="63.09" width="86.91" height="14.25" rx="2.83" ry="2.83"/>
   <rect class="cls-2" style="fill:#fff;" x="164.69" y="59.63" width="61.97" height="3.46"/>
-  <line class="cls-1" style="fill:none;stroke:#8c6339;stroke-miterlimit:10;" x1="253.42" y1="183.15" x2="373.7" y2="92.98"/>
-  <polyline class="cls-1" style="fill:none;stroke:#8c6339;stroke-miterlimit:10;" points="331.89 123.58 331.89 113.65 346.24 93"/>
-  <polyline class="cls-1" style="fill:none;stroke:#8c6339;stroke-miterlimit:10;" points="339.06 119.24 353.11 123.58 371.2 119.24"/>
-  <line class="cls-1" style="fill:none;stroke:#8c6339;stroke-miterlimit:10;" x1="39.07" y1="127.03" x2="43.55" y2="97.4"/>
-  <polyline class="cls-1" style="fill:none;stroke:#8c6339;stroke-miterlimit:10;" points="45.49 129.96 23.68 140.86 14.34 131.69"/>
+  <line class="cls-1" style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="253.42" y1="183.15" x2="373.7" y2="92.98"/>
+  <polyline class="cls-1" style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="331.89 123.58 331.89 113.65 346.24 93"/>
+  <polyline class="cls-1" style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="339.06 119.24 353.11 123.58 371.2 119.24"/>
+  <line class="cls-1" style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="39.07" y1="127.03" x2="43.55" y2="97.4"/>
+  <polyline class="cls-1" style="fill:none;stroke:#000000;stroke-miterlimit:10;" points="45.49 129.96 23.68 140.86 14.34 131.69"/>
 </svg>

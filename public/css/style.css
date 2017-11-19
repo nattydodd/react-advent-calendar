@@ -1,18 +1,19 @@
 .door {
   display: inline-block;
-  margin: 30px; }
+  margin: 20px 30px; }
   .door__frame {
-    background-color: #5f5f5f;
+    background-color: #6ab592;
     position: relative;
     width: 100px;
     height: 120px;
     margin: 0 auto;
     border-radius: 0 5px 5px 0;
-    box-shadow: 1px 1px 0px 0px #553925; }
+    box-shadow: 1px 1px 0px 0px #553925;
+    padding: 10px; }
     .door__frame--active:hover {
-      box-shadow: 1px 1px 20px 4px #58c62d; }
+      box-shadow: 1px 1px 20px 9px #ffffff; }
     .door__frame__door {
-      background-color: #87b5c7;
+      background-color: #fa7474;
       border-radius: 0 5px 5px 0;
       position: absolute;
       top: 0px;
@@ -22,7 +23,8 @@
       display: flex;
       justify-content: flex-end;
       transform-origin: left;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.5s ease-in-out;
+      padding: 10px; }
       .door__frame__door:hover {
         cursor: pointer; }
       .door__frame__door--open {
@@ -48,31 +50,36 @@
       .door__frame__door__number {
         position: absolute;
         width: 100%;
-        text-align: center; }
+        text-align: center;
+        margin-left: 10px; }
         .door__frame__door__number p {
           font-size: 30px;
-          color: #c31f12; }
-
-.calendar__title {
-  text-align: center;
-  margin-top: 60px; }
+          color: #ffffff; }
 
 .calendar__door-wrapper {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 70px auto 0px;
   text-align: center; }
 
 .progress-bar {
-  background: rgba(249, 249, 249, 0.57);
-  margin: 0 0 50px; }
+  background: #dcdfe2;
+  margin: 0 0 10px; }
   .progress-bar__bar {
+    margin-top: 100px;
     background: red;
     height: 20px;
     transition: width 0.5s ease-in-out; }
+    .progress-bar__bar__sleigh {
+      text-align: right;
+      position: relative;
+      top: -93px; }
 
 body {
   margin: 0;
-  background: #b1e8ff; }
+  background-color: #344964;
+  background-image: url("https://i.imgur.com/YEIIs82.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 p, h1, h2, h3, h4, h5 {
   font-family: 'Slabo 27px', serif; }
