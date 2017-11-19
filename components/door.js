@@ -12,6 +12,11 @@ class Door extends Component {
   }
 
   toggleDoor(id) {
+
+    if (!this.props.activeDoor) {
+      return;
+    }
+
     this.setState({
       open: !this.state.open
     });

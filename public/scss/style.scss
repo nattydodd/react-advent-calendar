@@ -2,6 +2,12 @@
 @import 'calendar.scss';
 @import 'progress-bar';
 
+
+body {
+  margin: 0;
+  background: rgb(177, 232, 255);
+}
+
 p {
   font-family: 'Slabo 27px', serif;
 }

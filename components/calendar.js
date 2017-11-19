@@ -36,14 +36,16 @@ class Calendar extends Component {
     super();
 
     this.state = {
-      progress: 0
+      progress: 0,
+      activeDoor: 1
     }
   }
 
   handleUpdateProgress(newProgress) {
     let percentage = newProgress / 25 * 100;
     this.setState({
-      progress: percentage
+      progress: percentage,
+      activeDoor: newProgress + 1
     });
   }
 
@@ -54,6 +56,8 @@ class Calendar extends Component {
           id={door}
           key={`door${door}`}
           updateProgress={this.handleUpdateProgress.bind(this)}
+          {/* we want to be able to open the door if it is active, and close it if the next door is active */}
+          activeDoor={this.state.activeDoor === door || this.state.activeDoor === door + 1}
         />
       )
     });
