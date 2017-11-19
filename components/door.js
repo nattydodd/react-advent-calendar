@@ -27,6 +27,9 @@ class Door extends Component {
           <div className="door__frame__door__handle"></div>
           <div className="door__frame__door__hinge top"></div>
           <div className="door__frame__door__hinge bottom"></div>
+          <div className="door__frame__door__number">
+            <p>{this.props.id}</p>
+          </div>
         </div>
       </div>
     );
