@@ -2,7 +2,14 @@ $module: '.calendar';
 
 #{$module} {
 
+  &__title {
+    text-align: center;
+    margin-top: 60px;
+  }
+
   &__door-wrapper {
-    width: 60%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
   }
 }

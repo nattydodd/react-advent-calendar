@@ -34,7 +34,7 @@ class Door extends Component {
     return (
       <div className="door">
         <div
-          className="door__frame">
+          className={`door__frame ${this.props.activeDoor && !this.state.open ? "door__frame--active" : ""}`}>
           <div
             className={`door__frame__door ${this.state.open ? "door__frame__door--open" : ""}`}
             onClick={() => this.toggleDoor(this.props.id)}>

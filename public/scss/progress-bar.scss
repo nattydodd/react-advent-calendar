@@ -2,7 +2,13 @@ $module: '.progress-bar';
 
 #{$module} {
 
-  background: red;
-  height: 20px;
-  transition: width 0.5s ease-in-out;
+  background: rgba(249, 249, 249, 0.57);
+  margin: 0 0 50px;
+
+  &__bar {
+    background: red;
+    height: 20px;
+    transition: width 0.5s ease-in-out;
+  }
+
 }

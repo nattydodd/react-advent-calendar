@@ -1,6 +1,6 @@
 .door {
   display: inline-block;
-  margin: 20px; }
+  margin: 30px; }
   .door__frame {
     background-color: #5f5f5f;
     position: relative;
@@ -9,8 +9,10 @@
     margin: 0 auto;
     border-radius: 0 5px 5px 0;
     box-shadow: 1px 1px 0px 0px #553925; }
+    .door__frame--active:hover {
+      box-shadow: 1px 1px 20px 4px #58c62d; }
     .door__frame__door {
-      background-color: #a26417;
+      background-color: #87b5c7;
       border-radius: 0 5px 5px 0;
       position: absolute;
       top: 0px;
@@ -29,7 +31,7 @@
         width: 10px;
         height: 10px;
         border-radius: 25px;
-        background-color: #aba9a9;
+        background-color: #b97d3a;
         margin: auto 7px auto auto;
         box-shadow: 1px 1px 0px 0px #2b0b0b; }
       .door__frame__door__hinge {
@@ -49,19 +51,28 @@
         text-align: center; }
         .door__frame__door__number p {
           font-size: 30px;
-          color: #ffc8c8; }
+          color: #c31f12; }
+
+.calendar__title {
+  text-align: center;
+  margin-top: 60px; }
 
 .calendar__door-wrapper {
-  width: 60%; }
+  max-width: 1200px;
+  margin: auto;
+  text-align: center; }
 
 .progress-bar {
-  background: red;
-  height: 20px;
-  transition: width 0.5s ease-in-out; }
+  background: rgba(249, 249, 249, 0.57);
+  margin: 0 0 50px; }
+  .progress-bar__bar {
+    background: red;
+    height: 20px;
+    transition: width 0.5s ease-in-out; }
 
 body {
   margin: 0;
   background: #b1e8ff; }
 
-p {
+p, h1, h2, h3, h4, h5 {
   font-family: 'Slabo 27px', serif; }

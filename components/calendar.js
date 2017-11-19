@@ -56,7 +56,7 @@ class Calendar extends Component {
           id={door}
           key={`door${door}`}
           updateProgress={this.handleUpdateProgress.bind(this)}
-          {/* we want to be able to open the door if it is active, and close it if the next door is active */}
+          /* we want to be able to open the door if it is active, and close it if the next door is active */
           activeDoor={this.state.activeDoor === door || this.state.activeDoor === door + 1}
         />
       )
@@ -66,7 +66,7 @@ class Calendar extends Component {
   render() {
     return (
       <div className="calendar">
-        This is a calendar
+        <h1 className="calendar__title">My Advent Calendar</h1>
         <ProgressBar percent={this.state.progress} />
         <div className="calendar__door-wrapper">
           {this.renderDoors()}
