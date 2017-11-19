@@ -15,12 +15,17 @@ class Calendar extends Component {
 
   constructor() {
     super();
+
+    this.state = {
+      progress: 0
+    }
   }
 
   handleUpdateProgress(newProgress) {
     let percentage = newProgress / 25 * 100;
-    console.log(`updating`, percentage);
-    return percentage;
+    this.setState({
+      progress: percentage
+    });
   }
 
   renderDoors() {
@@ -39,7 +44,7 @@ class Calendar extends Component {
     return (
       <div className="calendar">
         This is a calendar
-        <ProgressBar percent="10%" />
+        <ProgressBar percent={this.state.progress} />
         <div className="calendar__door-wrapper">
           {this.renderDoors()}
         </div>
