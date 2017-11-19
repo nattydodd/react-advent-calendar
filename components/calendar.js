@@ -17,10 +17,20 @@ class Calendar extends Component {
     super();
   }
 
+  handleUpdateProgress(newProgress) {
+    let percentage = newProgress / 25 * 100;
+    console.log(`updating`, percentage);
+    return percentage;
+  }
+
   renderDoors() {
     return doors.map((door) => {
       return (
-        <Door id={door} key={`door${door}`}/>
+        <Door
+          id={door}
+          key={`door${door}`}
+          updateProgress={this.handleUpdateProgress.bind(this)}
+        />
       )
     });
   }

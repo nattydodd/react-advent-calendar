@@ -11,10 +11,11 @@ class Door extends Component {
     }
   }
 
-  toggleDoor() {
+  toggleDoor(id) {
     this.setState({
       open: !this.state.open
-    })
+    });
+    this.props.updateProgress(id);
   }
 
   render() {
@@ -24,7 +25,7 @@ class Door extends Component {
           className="door__frame">
           <div
             className={`door__frame__door ${this.state.open ? "door__frame__door--open" : ""}`}
-            onClick={() => this.toggleDoor()}>
+            onClick={() => this.toggleDoor(this.props.id)}>
             <div className="door__frame__door__handle"></div>
             <div className="door__frame__door__hinge top"></div>
             <div className="door__frame__door__hinge bottom"></div>
