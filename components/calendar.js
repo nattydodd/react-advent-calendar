@@ -2,14 +2,24 @@ import React from 'react';
 import { Component } from 'react';
 import Door from './door.js';
 import ProgressBar from './progress-bar.js';
-import ChristmasScene from './christmas-scene.js';
+import Snowman from '../public/images/snowman-02.svg';
 
 const doors = (() => {
-  let doorArray = [];
+  let doorArray = [
+    {
+      id: 1,
+      image : Snowman
+    },
+    {
+      id: 2,
+      image: Snowman
+    },
+    {
+      id: 3,
+      image: Snowman
+    },
+  ];
   // create the array of days 1-25
-  for (let i = 1; i < 26; i++) {
-    doorArray.push(i);
-  }
 
   // then shuffle the array
   let m = doorArray.length; //25
@@ -53,11 +63,12 @@ class Calendar extends Component {
     return doors.map((door) => {
       return (
         <Door
-          id={door}
-          key={`door${door}`}
+          id={door.id}
+          image={door.image}
+          key={`door${door.id}`}
           updateProgress={this.handleUpdateProgress.bind(this)}
           /* we want to be able to open the door if it is active, and close it if the next door is active */
-          activeDoor={this.state.activeDoor === door || this.state.activeDoor === door + 1}
+          activeDoor={this.state.activeDoor === door.id || this.state.activeDoor === door.id + 1}
         />
       )
     });
@@ -71,7 +82,6 @@ class Calendar extends Component {
         <div className="calendar__door-wrapper">
           {this.renderDoors()}
         </div>
-        <ChristmasScene percent={this.state.progress} />
       </div>
     );
   }
