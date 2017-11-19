@@ -30,7 +30,9 @@ class Calendar extends Component {
       <div className="calendar">
         This is a calendar
         <ProgressBar percent="10%" />
-        {this.renderDoors()}
+        <div className="calendar__door-wrapper">
+          {this.renderDoors()}
+        </div>
         <ChristmasScene percent="10%" />
       </div>
     );

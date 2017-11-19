@@ -2,49 +2,52 @@ $module: '.door';
 
 #{$module} {
 
+  display: inline-block;
+  margin: 20px;
+
   &__frame {
     background-color: #5f5f5f;
     position: relative;
-    width: 150px;
-    height: 170px;
+    width: 100px;
+    height: 120px;
     margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 5px 5px 0;
     box-shadow: 1px 1px 0px 0px #553925;
 
     &__door {
       background-color: #a26417;
-      border-radius: 0 10px 10px 0;
+      border-radius: 0 5px 5px 0;
       position: absolute;
       top: 0px;
       left: 0px;
-      width: 150px;
-      height: 170px;
+      width: 100px;
+      height: 120px;
       display: flex;
       justify-content: flex-end;
       transform-origin: left;
       transition: all 0.5s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
 
       &--open {
         transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
       }
 
       &__handle {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-radius: 25px;
         background-color: #aba9a9;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 10px;
-        margin: auto 10px auto auto;
+        margin: auto 7px auto auto;
         box-shadow: 1px 1px 0px 0px #2b0b0b;
       }
 
       &__hinge {
         width: 5px;
         background: #afafaf;
-        height: 30px;
+        height: 20px;
         position: absolute;
         box-shadow: 1px 1px 1px 0px #484747;
         left: -1px;
@@ -63,9 +66,9 @@ $module: '.door';
         position: absolute;
         width: 100%;
         text-align: center;
-        font-size: 45px;
 
         p {
+          font-size: 30px;
           color: #ffc8c8;
         }
       }
