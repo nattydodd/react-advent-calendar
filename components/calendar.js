@@ -11,7 +11,7 @@ class Calendar extends Component {
       <div className="calendar">
         This is a calendar
         <ProgressBar percent="10%" />
-        <Door />
+        <Door id="1"/>
         <ChristmasScene percent="10%" />
       </div>
     );
