@@ -54,5 +54,10 @@
 .calendar__door-wrapper {
   width: 60%; }
 
+.progress-bar {
+  background: red;
+  height: 20px;
+  transition: width 0.5s ease-in-out; }
+
 p {
   font-family: 'Slabo 27px', serif; }

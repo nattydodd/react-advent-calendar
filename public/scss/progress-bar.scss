@@ -1,0 +1,8 @@
+$module: '.progress-bar';
+
+#{$module} {
+
+  background: red;
+  height: 20px;
+  transition: width 0.5s ease-in-out;
+}

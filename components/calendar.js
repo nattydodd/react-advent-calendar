@@ -5,12 +5,31 @@ import ProgressBar from './progress-bar.js';
 import ChristmasScene from './christmas-scene.js';
 
 const doors = (() => {
-    let doorArray = [];
-    for (let i = 1; i < 26; i++) {
-      doorArray.push(i);
-    }
-    return doorArray;
-  })();
+  let doorArray = [];
+  // create the array of days 1-25
+  for (let i = 1; i < 26; i++) {
+    doorArray.push(i);
+  }
+
+  // then shuffle the array
+  let m = doorArray.length; //25
+  let t;
+  let i;
+
+  while (m) {
+    m--
+    i = Math.floor(Math.random() * m);
+
+    t = doorArray[m];
+    doorArray[m] = doorArray[i];
+    doorArray[i] = t;
+  }
+
+  return doorArray;
+
+})();
+
+
 class Calendar extends Component {
 
   constructor() {
@@ -22,7 +41,6 @@ class Calendar extends Component {
   }
 
   handleUpdateProgress(newProgress) {
-    console.log(newProgress);
     let percentage = newProgress / 25 * 100;
     this.setState({
       progress: percentage
@@ -49,7 +67,7 @@ class Calendar extends Component {
         <div className="calendar__door-wrapper">
           {this.renderDoors()}
         </div>
-        <ChristmasScene percent="10%" />
+        <ChristmasScene percent={this.state.progress} />
       </div>
     );
   }
