@@ -15,7 +15,14 @@ class Door extends Component {
     this.setState({
       open: !this.state.open
     });
-    this.props.updateProgress(id);
+
+    // if the door is opening, increase the progress, if it is closing, decrease
+    if (!this.state.open) {
+      this.props.updateProgress(id);
+    } else {
+      this.props.updateProgress(parseInt(id) - 1);
+    }
+
   }
 
   render() {

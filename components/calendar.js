@@ -22,6 +22,7 @@ class Calendar extends Component {
   }
 
   handleUpdateProgress(newProgress) {
+    console.log(newProgress);
     let percentage = newProgress / 25 * 100;
     this.setState({
       progress: percentage
