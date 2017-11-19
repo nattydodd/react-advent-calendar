@@ -3,28 +3,63 @@ $module: '.door';
 #{$module} {
 
   &__frame {
-    background-color: lightgrey;
+    background-color: #5f5f5f;
     position: relative;
     width: 200px;
-    height: 300px;
-
+    height: 220px;
     margin: 0 auto;
     margin-top: 50px;
-  }
+    border-radius: 0 10px 10px 0;
+    box-shadow: 1px 1px 0px 0px #553925;
 
-  &__door {
-    background-color: brown;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 200px;
-    height: 300px;
+    &__door {
+      background-color: #a26417;
+      border-radius: 0 10px 10px 0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 200px;
+      height: 220px;
+      display: flex;
+      justify-content: flex-end;
+      transform-origin: left;
+      transition: all 0.5s ease-in-out;
 
-    transform-origin: left;
-    transition: all 0.5s ease-in-out;
+      &--open {
+        transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+      }
 
-    &--open {
-      transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+      &__handle {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+        background-color: #aba9a9;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+        margin: auto 10px auto auto;
+        box-shadow: 1px 1px 0px 0px #2b0b0b;
+      }
+
+      &__hinge {
+        width: 5px;
+        background: #afafaf;
+        height: 30px;
+        position: absolute;
+        box-shadow: 1px 1px 1px 0px #484747;
+        left: -1px;
+
+        &.top {
+          top: 20px;
+        }
+
+        &.bottom {
+          bottom: 20px;
+        }
+
+      }
+
     }
   }
+
 }
