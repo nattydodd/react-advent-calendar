@@ -3,22 +3,20 @@ $module: '.door';
 #{$module} {
 
   display: inline-block;
-  margin: 20px 30px;
+  margin: 15px 15px;
 
   &__frame {
     background-color: #6ab592;
     position: relative;
-    width: 100px;
-    height: 120px;
+    width: 70px;
+    height: 90px;
     margin: 0 auto;
     border-radius: 0 5px 5px 0;
     box-shadow: 1px 1px 0px 0px #553925;
     padding: 10px;
 
     &--active {
-      &:hover {
-        box-shadow: 1px 1px 20px 9px #ffffff;
-      }
+      box-shadow: 1px 1px 20px 9px #ffffff;
     }
 
     &__door {
@@ -27,8 +25,8 @@ $module: '.door';
       position: absolute;
       top: 0px;
       left: 0px;
-      width: 100px;
-      height: 120px;
+      width: 70px;
+      height: 90px;
       display: flex;
       justify-content: flex-end;
       transform-origin: left;
@@ -48,7 +46,7 @@ $module: '.door';
         height: 10px;
         border-radius: 25px;
         background-color: #b97d3a;
-        margin: auto 7px auto auto;
+        margin: auto 3px auto auto;
         box-shadow: 1px 1px 0px 0px #2b0b0b;
       }
 
@@ -77,7 +75,7 @@ $module: '.door';
         margin-left: 10px;
 
         p {
-          font-size: 30px;
+          font-size: 25px;
           color: #ffffff;
         }
       }
