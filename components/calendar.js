@@ -3,6 +3,7 @@ import { Component } from 'react';
 import Door from './door.js';
 import ProgressBar from './progress-bar.js';
 import doors from '../public/images/list.js';
+
 class Calendar extends Component {
 
   constructor() {
@@ -40,6 +41,9 @@ class Calendar extends Component {
   render() {
     return (
       <div className="calendar">
+        <Link to="/">
+          Home
+        </Link>
         <div className="calendar__door-wrapper">
           {this.renderDoors()}
         </div>
